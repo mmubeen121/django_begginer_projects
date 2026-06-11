@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ topic.topic_name }}</title>
+  </head>
+  <body>
+    <h1>{{ topics.topic_name }}</h1>
+    <hr />
+    <p>{{ topics.created_at }}</p>
+
+    <a href="{% url 'index' %}">Back To Listings</a>
+  </body>
+</html>

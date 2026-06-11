@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eassy Topics Listings</title>
+  </head>
+  <body>
+    <h1>Eassy Topics Listings</h1>
+    <hr />
+    {% for topic in topics %}
+    <li>
+      <a href='{% url "topic_detail" topic.pk %}'>{{topic.topic_name}}</a>
+    </li>
+    {% endfor %}
+  </body>
+</html>
