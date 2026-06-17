@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Disc Homepage</title>
+  </head>
+  <body>
+    <div class="logo">
+      <h3>Dev_Disc</h3>
+    </div>
+    <hr />
+    <ul>
+      {% for room in rooms %}
+      <li>{{ room.name }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
